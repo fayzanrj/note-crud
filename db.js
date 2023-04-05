@@ -7,9 +7,9 @@ const mongoURI = "mongodb+srv://fayzanrj786:a4b65595@cluster0.k5kzu9p.mongodb.ne
 
 const connectToMongo = async ()=>{
     mongoose.connect(mongoURI).then(()=>{
-        console.log('connected')
+        // console.log('connected')
     }).catch((err)=>{
-        console.log("err")
+        // console.log("err")
     })
 }
 

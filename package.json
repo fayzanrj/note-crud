@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodemon": "nodemon index.js",
-    "build" : "npm intsall i nodemon mongoose dotenv ",
+    "build" : "npm intsall i nodemon mongoose dotenv",
     "start" : "npm start"
   },
   "author": "",

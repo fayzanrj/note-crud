@@ -7,7 +7,7 @@ var jwt = require('jsonwebtoken');
 var fetchUser = require('../middleware/fetchuser')
 require("dotenv").config()
 
-let JWT_Secret = process.env.JWT_SECRET;
+let JWT_Secret = "WebAoo";
 
 router.post('/createuser', [
     // validating the entered data
@@ -45,7 +45,7 @@ router.post('/createuser', [
                 id: user.id
             }
         }
-        var authToken = jwt.sign(data, process.env.JWT_SECRET);
+        var authToken = jwt.sign(data, JWT_Secret);
 
         res.json({
             'status': "success",
@@ -91,7 +91,7 @@ router.post('/login', [
                 id: user.id
             }
         }
-        var authToken = jwt.sign(data, process.env.JWT_SECRET);
+        var authToken = jwt.sign(data, JWT_Secret);
 
         res.json({
             'authToken': authToken,

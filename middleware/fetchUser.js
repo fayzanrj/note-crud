@@ -1,5 +1,4 @@
 var jwt = require('jsonwebtoken');
-require("dotenv").config()
 
 let JWT_Secret = "WebApp";
 

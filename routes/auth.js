@@ -5,9 +5,9 @@ const { body, validationResult } = require('express-validator');
 var bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 var fetchUser = require('../middleware/fetchuser')
-require("dotenv").config()
 
-let JWT_Secret = "WebAoo";
+
+let JWT_Secret = "WebApp";
 
 router.post('/createuser', [
     // validating the entered data

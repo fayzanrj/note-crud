@@ -1,7 +1,7 @@
 const express = require('express')
 const Notes = require('../models/Notes');
 const router = express.Router()
-var fetchUser = require('../middleware/fetchuser')
+var fetchUser = require('../middleware/fetchUser')
 const { body, validationResult } = require('express-validator');
 
 // Route 1 : to fetch all the notes of the user
